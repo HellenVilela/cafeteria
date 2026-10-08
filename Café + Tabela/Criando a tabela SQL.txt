@@ -1,0 +1,8 @@
+CREATE TABLE pedidos (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    nome_cliente VARCHAR(100) NOT NULL,
+    cafe VARCHAR(50) NOT NULL,
+    tamanho VARCHAR(20) NOT NULL,
+    observacoes VARCHAR(255),
+    data_pedido DATETIME DEFAULT GETDATE()
+);
